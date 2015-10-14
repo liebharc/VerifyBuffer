@@ -1,0 +1,9 @@
+This tool looks for constructors for numeric arrays in C# .NET sources files and reports them.
+
+Background: We used this tool to quickly analyze the code of a large application which gets an input, works on large
+numeric arrays, outputs the results and repeats the whole procedure thousands of times. Developers were encouraged
+to use buffers or pools to avoid large array allocation in every cycle. To confirm that this is always the case
+we were interested in the code locations where arrays are created. Our refactoring tools and IDE didn't have a feature 
+to do that. A regex would have been an option but we were also interested to learn if we can use NRefactory to implement checks based on source code analysis.
+
+

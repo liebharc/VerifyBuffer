@@ -1,0 +1,9 @@
+*.suo
+bin
+obj
+Debug
+Release
+*.sdf
+*.DotSettings.user
+*.opensdf
+/packages
